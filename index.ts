@@ -12,7 +12,7 @@ async function main() {
   const userId = user.id
   await prisma.code.create({
     data: {
-      id: 't123',
+      id: `t${Math.random()}`,
       type: 'resetpassword',
       user: { connect: { id: userId } },
       singleUse: true,

@@ -11,7 +11,7 @@ generator client {
 }
 
 model Code {
-  id          String        @default(dbgenerated()) @id
+  id          String        @id
   type        String
   singleUse   Boolean
   userId      String?
